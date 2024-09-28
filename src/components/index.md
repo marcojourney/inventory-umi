@@ -38,10 +38,10 @@ import HeaderDropdown from '@/components/HeaderDropdown';
 export default () => {
   const menuHeaderDropdown = (
     <Menu selectedKeys={[]}>
-      <Menu.Item key="center">个人中心</Menu.Item>
+      <Menu.Item key="center">Account</Menu.Item>
       <Menu.Item key="settings">个人设置</Menu.Item>
       <Menu.Divider />
-      <Menu.Item key="logout">退出登录</Menu.Item>
+      <Menu.Item key="logout">Logout</Menu.Item>
     </Menu>
   );
   return (
@@ -70,7 +70,7 @@ export default () => {
       placeholder="站内搜索"
       defaultValue="umi ui"
       options={[
-        { label: 'Ant Design Pro', value: 'Ant Design Pro' },
+        { label: 'ERP HUB', value: 'ERP HUB' },
         {
           label: 'Ant Design',
           value: 'Ant Design',

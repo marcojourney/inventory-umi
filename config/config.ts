@@ -104,26 +104,32 @@ export default defineConfig({
     {
       path: '/form',
       icon: 'form',
-      name: 'form',
+      name: 'Sales',
       routes: [
         {
           path: '/form',
           redirect: '/form/basic-form',
         },
         {
-          name: 'basic-form',
+          name: 'Orders',
           icon: 'smile',
           path: '/form/basic-form',
           component: './form/basic-form',
         },
         {
-          name: 'step-form',
+          name: 'Quotes',
           icon: 'smile',
           path: '/form/step-form',
           component: './form/step-form',
         },
         {
-          name: 'advanced-form',
+          name: 'Invoices',
+          icon: 'smile',
+          path: '/form/advanced-form',
+          component: './form/advanced-form',
+        },
+        {
+          name: 'Customers',
           icon: 'smile',
           path: '/form/advanced-form',
           component: './form/advanced-form',
@@ -131,66 +137,95 @@ export default defineConfig({
       ],
     },
     {
-      path: '/list',
+      path: '/inventory',
       icon: 'table',
-      name: 'list',
+      name: 'Purchasing',
       routes: [
         {
-          path: '/list/search',
-          name: 'search-list',
-          component: './list/search',
+          path: '/inventory/search',
+          name: 'Orders',
+          component: './inventory/search',
           routes: [
             {
-              path: '/list/search',
-              redirect: '/list/search/articles',
+              path: '/inventory/search',
+              redirect: '/inventory/search/articles',
             },
             {
               name: 'articles',
               icon: 'smile',
-              path: '/list/search/articles',
-              component: './list/search/articles',
+              path: '/inventory/search/articles',
+              component: './inventory/search/articles',
             },
             {
               name: 'projects',
               icon: 'smile',
-              path: '/list/search/projects',
-              component: './list/search/projects',
+              path: '/inventory/search/projects',
+              component: './inventory/search/projects',
             },
             {
               name: 'applications',
               icon: 'smile',
-              path: '/list/search/applications',
-              component: './list/search/applications',
+              path: '/inventory/search/applications',
+              component: './inventory/search/applications',
             },
           ],
         },
         {
-          path: '/list',
-          redirect: '/list/table-list',
+          path: '/inventory',
+          redirect: '/inventory/table-list',
         },
         {
-          name: 'table-list',
+          name: 'RFPs',
           icon: 'smile',
-          path: '/list/table-list',
-          component: './list/table-list',
+          path: '/inventory/products',
+          component: './inventory/table-list',
         },
         {
-          name: 'basic-list',
+          name: 'Vendors',
           icon: 'smile',
-          path: '/list/basic-list',
-          component: './list/basic-list',
+          path: '/inventory/basic-list',
+          component: './inventory/basic-list',
         },
         {
           name: 'card-list',
           icon: 'smile',
-          path: '/list/card-list',
-          component: './list/card-list',
+          path: '/inventory/card-list',
+          component: './inventory/card-list',
+        },
+      ],
+    },
+    {
+      path: '/inventory',
+      icon: 'table',
+      name: 'Inventory',
+      routes: [
+        {
+          path: '/inventory',
+          redirect: '/inventory/table-list',
+        },
+        {
+          name: 'Items',
+          icon: 'smile',
+          path: '/inventory/products',
+          component: './inventory/table-list',
+        },
+        {
+          name: 'Transfers',
+          icon: 'smile',
+          path: '/inventory/basic-list',
+          component: './inventory/basic-list',
+        },
+        {
+          name: 'Adjustment',
+          icon: 'smile',
+          path: '/inventory/card-list',
+          component: './inventory/card-list',
         },
       ],
     },
     {
       path: '/profile',
-      name: 'profile',
+      name: 'Sales',
       icon: 'profile',
       routes: [
         {
@@ -212,7 +247,7 @@ export default defineConfig({
       ],
     },
     {
-      name: 'result',
+      name: 'Reports',
       icon: 'CheckCircleOutlined',
       path: '/result',
       routes: [
@@ -221,16 +256,32 @@ export default defineConfig({
           redirect: '/result/success',
         },
         {
-          name: 'success',
+          name: 'Financial Reports',
           icon: 'smile',
           path: '/result/success',
           component: './result/success',
+          description: 'Income statements, balance sheets, cash flow statements, profit and loss reports.',
         },
         {
-          name: 'fail',
+          name: 'Sales Reports',
           icon: 'smile',
           path: '/result/fail',
           component: './result/fail',
+          description: 'Sales by product, customer, region, time period, sales team performance.'
+        },
+        {
+          name: 'Purchasing Reports',
+          icon: 'smile',
+          path: '/result/fail',
+          component: './result/fail',
+          description: 'Purchase orders by vendor, product, time period, purchase order status.'
+        },
+        {
+          name: 'HR Reports',
+          icon: 'smile',
+          path: '/result/fail',
+          component: './result/fail',
+          description: 'Employee turnover, absenteeism, payroll reports, training records'
         },
       ],
     },
@@ -285,6 +336,12 @@ export default defineConfig({
           component: './account/settings',
         },
       ],
+    },
+    {
+      name: 'Setting',
+      icon: 'setting',
+      path: '/setting',
+      component: './setting/center'
     },
     {
       path: '/',

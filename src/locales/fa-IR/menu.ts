@@ -35,7 +35,7 @@ export default {
   'menu.result': 'نتیجه',
   'menu.result.success': 'موفق',
   'menu.result.fail': 'ناموفق',
-  'menu.exception': 'استثنا',
+  'menu.exception': 'របាយការណ៍',
   'menu.exception.not-permission': '403',
   'menu.exception.not-find': '404',
   'menu.exception.server-error': '500',

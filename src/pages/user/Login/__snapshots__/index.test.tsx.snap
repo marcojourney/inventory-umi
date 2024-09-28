@@ -463,9 +463,9 @@ exports[`should show login form 1`] = `
               href="https://pro.ant.design"
               rel="noreferrer"
               target="_blank"
-              title="Ant Design Pro"
+              title="ERP HUB"
             >
-              Ant Design Pro
+              ERP HUB
             </a>
             <a
               class="ant-pro-global-footer-list-link "
