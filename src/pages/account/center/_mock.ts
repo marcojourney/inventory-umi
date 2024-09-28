@@ -52,7 +52,7 @@ const user = [
 
 // 当前用户信息
 const currentUseDetail = {
-  name: 'Serati Ma',
+  name: 'ERP HUB',
   avatar:
     'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
   userid: '00000001',
