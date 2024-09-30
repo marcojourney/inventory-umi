@@ -137,61 +137,61 @@ export default defineConfig({
       ],
     },
     {
-      path: '/inventory',
+      path: '/purchase',
       icon: 'table',
       name: 'Purchasing',
       routes: [
         {
-          path: '/inventory/search',
+          path: '/purchase/search',
           name: 'Orders',
-          component: './inventory/search',
-          routes: [
-            {
-              path: '/inventory/search',
-              redirect: '/inventory/search/articles',
-            },
-            {
-              name: 'articles',
-              icon: 'smile',
-              path: '/inventory/search/articles',
-              component: './inventory/search/articles',
-            },
-            {
-              name: 'projects',
-              icon: 'smile',
-              path: '/inventory/search/projects',
-              component: './inventory/search/projects',
-            },
-            {
-              name: 'applications',
-              icon: 'smile',
-              path: '/inventory/search/applications',
-              component: './inventory/search/applications',
-            },
-          ],
+          component: './purchase/search/projects',
+          // routes: [
+          //   {
+          //     path: '/purchase/search',
+          //     redirect: '/purchase/search/articles',
+          //   },
+          //   {
+          //     name: 'articles',
+          //     icon: 'smile',
+          //     path: '/purchase/search/articles',
+          //     component: './purchase/search/articles',
+          //   },
+          //   {
+          //     name: 'projects',
+          //     icon: 'smile',
+          //     path: '/purchase/search/projects',
+          //     component: './purchase/search/projects',
+          //   },
+          //   {
+          //     name: 'applications',
+          //     icon: 'smile',
+          //     path: '/purchase/search/applications',
+          //     component: './purchase/search/applications',
+          //   },
+          // ],
         },
         {
-          path: '/inventory',
-          redirect: '/inventory/table-list',
+          path: '/purchase',
+          redirect: '/purchase/table-list',
         },
         {
           name: 'RFPs',
           icon: 'smile',
-          path: '/inventory/products',
-          component: './inventory/table-list',
+          path: '/purchase/products',
+          component: './purchase/table-list',
         },
         {
           name: 'Vendors',
           icon: 'smile',
-          path: '/inventory/basic-list',
-          component: './inventory/basic-list',
+          path: '/purchase/basic-list',
+          component: './purchase/basic-list',
         },
-        {
-          name: 'card-list',
-          icon: 'smile',
-          path: '/inventory/card-list',
-          component: './inventory/card-list',
-        },
+        // {
+        //   name: 'card-list',
+        //   icon: 'smile',
+        //   path: '/purchase/card-list',
+        //   component: './purchase/card-list',
+        // },
       ],
     },
     {
@@ -221,6 +221,35 @@ export default defineConfig({
           path: '/inventory/card-list',
           component: './inventory/card-list',
         },
+      ],
+    },
+    {
+      path: '/finance',
+      icon: 'table',
+      name: 'Finance',
+      routes: [
+        {
+          path: '/finance',
+          redirect: '/finance/table-list',
+        },
+        {
+          name: 'GL', //General Ledger
+          icon: 'smile',
+          path: '/finance/products',
+          component: './finance/table-list',
+        },
+        {
+          name: 'AR', //Accounts Receivable
+          icon: 'smile',
+          path: '/finance/basic-list',
+          component: './finance/basic-list',
+        },
+        {
+          name: 'AP', //Accounts Payable
+          icon: 'smile',
+          path: '/finance/card-list',
+          component: './finance/card-list',
+        }
       ],
     },
     {
