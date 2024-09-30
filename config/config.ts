@@ -243,21 +243,21 @@ export default defineConfig({
           name: 'Sales Reports',
           icon: 'smile',
           path: '/result/fail',
-          component: './result/fail',
+          component: './result/sales-report',
           description: 'Sales by product, customer, region, time period, sales team performance.'
         },
         {
           name: 'Purchasing Reports',
           icon: 'smile',
           path: '/result/fail',
-          component: './result/fail',
+          component: './result/purchase-report',
           description: 'Purchase orders by vendor, product, time period, purchase order status.'
         },
         {
           name: 'HR Reports',
           icon: 'smile',
           path: '/result/fail',
-          component: './result/fail',
+          component: './result/hr-report',
           description: 'Employee turnover, absenteeism, payroll reports, training records'
         },
       ],
