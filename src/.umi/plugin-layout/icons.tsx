@@ -5,9 +5,8 @@ import SmileOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/e
 import DashboardOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/DashboardOutlined';
 import FormOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/FormOutlined';
 import TableOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/TableOutlined';
-import ProfileOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/ProfileOutlined';
 import CheckCircleOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/CheckCircleOutlined';
 import WarningOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/WarningOutlined';
 import UserOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/UserOutlined';
 import SettingOutlined from 'D:/RND/inventory-umi/node_modules/@ant-design/icons/es/icons/SettingOutlined';
-export default { SmileOutlined, DashboardOutlined, FormOutlined, TableOutlined, ProfileOutlined, CheckCircleOutlined, WarningOutlined, UserOutlined, SettingOutlined };
+export default { SmileOutlined, DashboardOutlined, FormOutlined, TableOutlined, CheckCircleOutlined, WarningOutlined, UserOutlined, SettingOutlined };
