@@ -3,8 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 // It's faked dva
 // aliased to @umijs/plugins/templates/dva
-import { create, Provider } from 'D:/RND/inventory-umi/node_modules/@umijs/plugins/libs/dva.tsx';
-import createLoading from 'D:/RND/inventory-umi/node_modules/dva-loading/dist/index.js';
+import { create, Provider } from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/@umijs/plugins/libs/dva.tsx';
+import createLoading from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/dva-loading/dist/index.js';
 
 import React, { useRef } from 'react';
 import { history, ApplyPluginsType, useAppData } from 'umi';

@@ -3,16 +3,16 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useEffect, useState } from 'react';
 import { ApplyPluginsType } from 'umi';
-import { renderClient, RenderClientOpts } from 'D:/RND/inventory-umi/node_modules/@umijs/renderer-react';
+import { renderClient, RenderClientOpts } from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/@umijs/renderer-react';
 import { createHistory } from './core/history';
 import { createPluginManager } from './core/plugin';
 import { getRoutes } from './core/route';
 import type { Location } from 'history';
 
-import Loading from 'D:/RND/inventory-umi/src/loading.tsx';
+import Loading from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/loading.tsx';
 
-import 'D:/RND/inventory-umi/src/global.less';
-import 'D:/RND/inventory-umi/src/global.tsx';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/global.less';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/global.tsx';
 import 'antd/dist/antd.less';
 const publicPath = '/';
 const runtimePublicPath = false;

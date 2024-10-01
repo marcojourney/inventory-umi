@@ -5,11 +5,11 @@ import {
   createIntl,
   IntlShape,
   MessageDescriptor,
-} from 'D:/RND/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
+} from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
 import { getPluginManager } from '../core/plugin';
-import EventEmitter from 'D:/RND/inventory-umi/node_modules/event-emitter';
+import EventEmitter from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/event-emitter';
 // @ts-ignore
-import warning from 'D:/RND/inventory-umi/node_modules/warning';
+import warning from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/warning';
 
 export {
   createIntl,
@@ -34,7 +34,7 @@ export {
   defineMessages,
   injectIntl,
   useIntl,
-} from 'D:/RND/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
+} from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
 
 let g_intl: IntlShape;
 
@@ -46,21 +46,21 @@ export const event = new EventEmitter();
 export const LANG_CHANGE_EVENT = Symbol('LANG_CHANGE');
 
 import bnBD0 from 'antd/es/locale/bn_BD';
-import lang_bnBD0 from "D:/RND/inventory-umi/src/locales/bn-BD.ts";
+import lang_bnBD0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/bn-BD.ts";
 import enUS0 from 'antd/es/locale/en_US';
-import lang_enUS0 from "D:/RND/inventory-umi/src/locales/en-US.ts";
+import lang_enUS0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/en-US.ts";
 import faIR0 from 'antd/es/locale/fa_IR';
-import lang_faIR0 from "D:/RND/inventory-umi/src/locales/fa-IR.ts";
+import lang_faIR0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/fa-IR.ts";
 import idID0 from 'antd/es/locale/id_ID';
-import lang_idID0 from "D:/RND/inventory-umi/src/locales/id-ID.ts";
+import lang_idID0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/id-ID.ts";
 import jaJP0 from 'antd/es/locale/ja_JP';
-import lang_jaJP0 from "D:/RND/inventory-umi/src/locales/ja-JP.ts";
+import lang_jaJP0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/ja-JP.ts";
 import ptBR0 from 'antd/es/locale/pt_BR';
-import lang_ptBR0 from "D:/RND/inventory-umi/src/locales/pt-BR.ts";
+import lang_ptBR0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/pt-BR.ts";
 import zhCN0 from 'antd/es/locale/zh_CN';
-import lang_zhCN0 from "D:/RND/inventory-umi/src/locales/zh-CN.ts";
+import lang_zhCN0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/zh-CN.ts";
 import zhTW0 from 'antd/es/locale/zh_TW';
-import lang_zhTW0 from "D:/RND/inventory-umi/src/locales/zh-TW.ts";
+import lang_zhTW0 from "/Volumes/Projects/Personal/ERP-HUB/inventory-umi/src/locales/zh-TW.ts";
 
 const flattenMessages=(
   nestedMessages: Record<string, any>,
@@ -238,13 +238,13 @@ export const getIntl = (locale?: string, changeIntl?: boolean) => {
     `The current popular language does not exist, please check the locales folder!`,
   );
   // 使用 zh-CN
-  if (localeInfo["zh-CN"]) {
-    return _createIntl("zh-CN");
+  if (localeInfo["en-US"]) {
+    return _createIntl("en-US");
   }
 
   // 如果还没有，返回一个空的
   return createIntl({
-    locale: "zh-CN",
+    locale: "en-US",
     messages: {}
   });
 };
@@ -280,7 +280,7 @@ export const getLocale = () => {
   browserLang = isNavigatorLanguageValid
     ? navigator.language.split('-').join('-')
     : '';
-  return lang || browserLang || "zh-CN";
+  return lang || browserLang || "en-US";
 };
 
 

@@ -3,7 +3,7 @@
 import {
   IntlCache,
   createIntl,
-} from 'D:/RND/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
+} from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/@umijs/plugins/node_modules/react-intl';
 type OptionalIntlConfig = Omit<Parameters<typeof createIntl>[0], 'locale' | 'defaultLocale'>;
 export interface IRuntimeConfig {
     locale?: {

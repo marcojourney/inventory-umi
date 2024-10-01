@@ -4,14 +4,14 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
 
-import moment from 'D:/RND/inventory-umi/node_modules/moment';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/bn-bd';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/fa';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/id';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/ja';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/pt-br';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/zh-cn';
-import 'D:/RND/inventory-umi/node_modules/moment/locale/zh-tw';
+import moment from '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/bn-bd';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/fa';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/id';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/ja';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/pt-br';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/zh-cn';
+import '/Volumes/Projects/Personal/ERP-HUB/inventory-umi/node_modules/moment/locale/zh-tw';
 import { RawIntlProvider, getLocale, getDirection , setIntl, getIntl, localeInfo, event, LANG_CHANGE_EVENT } from './localeExports';
 
 

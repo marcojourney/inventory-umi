@@ -27,7 +27,7 @@ export default defineConfig({
   // https://umijs.org/zh-CN/plugins/plugin-locale
   locale: {
     // default zh-CN
-    default: 'zh-CN',
+    default: 'en-US',
     antd: true,
     // default true, when it is true, will use `navigator.language` overwrite default
     baseNavigator: true,
@@ -201,13 +201,17 @@ export default defineConfig({
       routes: [
         {
           path: '/inventory',
-          redirect: '/inventory/table-list',
+          redirect: '/inventory/items',
         },
         {
           name: 'Items',
           icon: 'smile',
-          path: '/inventory/products',
-          component: './inventory/table-list',
+          path: '/inventory/items',
+          component: './inventory/items',
+        },
+        {
+          path: '/inventory/items/new-item',
+          component: './inventory/items/edit-add/index',
         },
         {
           name: 'Transfers',

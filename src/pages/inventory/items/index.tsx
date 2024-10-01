@@ -17,8 +17,9 @@ import { Button, Drawer, Input, message } from 'antd';
 import React, { useRef, useState } from 'react';
 import type { FormValueType } from './components/UpdateForm';
 import UpdateForm from './components/UpdateForm';
-import type { TableListItem, TableListPagination } from './data.d';
+import type { TableListItem, TableListPagination } from './data';
 import { addRule, removeRule, rule, updateRule } from './service';
+import { Link } from '@umijs/max';
 /**
  * 添加节点
  *
@@ -198,22 +199,24 @@ const TableList: React.FC = () => {
   return (
     <PageContainer>
       <ProTable<TableListItem, TableListPagination>
-        headerTitle="All Products"
+        headerTitle="All Items"
         actionRef={actionRef}
         rowKey="key"
         search={{
           labelWidth: 120,
         }}
         toolBarRender={() => [
-          <Button
+          <Link to="/inventory/items/new-item" className="ant-btn ant-btn-primary">
+          {/* <Button
             type="primary"
             key="primary"
             onClick={() => {
               handleModalVisible(true);
             }}
-          >
+          > */}
             <PlusOutlined /> Add New
-          </Button>,
+          {/* </Button> */}
+          </Link>,
         ]}
         request={rule}
         columns={columns}
